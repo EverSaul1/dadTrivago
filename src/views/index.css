@@ -1,0 +1,62 @@
+html, body {
+    
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #EBECED;
+    
+}
+.Login {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    
+}
+
+.Login-box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    
+}
+#google{
+    color: blue;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    
+    
+    
+}
+
+
+.go{
+    color:red;
+    padding-right: 30px;
+}
+.fb{
+    padding-right: 30px;
+}
+.aling{
+    display: flex !important;
+    flex-direction: column;
+}
+
+.home nav{
+    padding: 6px;
+}
+.navs{
+    background-color:#37454D;
+    border-style: groove;
+    border-width: 1px 1px 1px 1px;
+    border-color: #757575;
+    
+}
+.home-avatar{
+    height: 50px;
+}
+.login-box2{
+    
+    padding-left: 16px;
+}
+
