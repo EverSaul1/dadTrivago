@@ -3,7 +3,7 @@ import { Route, Router } from 'react-router'
 import PropTypes from 'prop-types'
 import './App.css'
 
-import Home from './views/Home'
+import Catalogo from './views/Catalogo'
 import Login from './views/Login'
 
 class App extends Component {
@@ -11,8 +11,13 @@ class App extends Component {
     return (
       <Router history={ this.props.history }>
         <div>
-          <Route exact path="/" component={ Login }/>
-          <Route path='/home' component= { Home }/>
+          <Route exact 
+          path="/" 
+          component={ Login }/>
+          <Route 
+          path='/catalogo' 
+          component= { Catalogo }/>
+          
         </div>
       </Router>
     );

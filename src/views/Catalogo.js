@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import { Redirect} from 'react-router-dom'
+import { getUsers } from '../actions'
+
 
 import './index.css'
-class Home extends Component {
+class Catalogo extends Component {
+  
+
   constructor() {
     super();
     this.state = {
@@ -15,6 +21,8 @@ class Home extends Component {
     this.onlogout = this.onlogout.bind(this);
   }
   componentWillMount() {
+    this.props.getUsers();
+
     let fbData = JSON.parse(localStorage.getItem('fbData'));
     let googleData = JSON.parse(localStorage.getItem('googleData'));
 
@@ -34,6 +42,7 @@ class Home extends Component {
 
   }
   render() {
+    console.log(this.props);
     if (this.state.islogout) {
       return (<Redirect to="/"/>);
 
@@ -64,5 +73,15 @@ class Home extends Component {
     );
   }
 }
+function mapStateToProps(state){
+  return {
+    users: state.getUsers
+  }
+}
+function mapDispatchProps(dispatch){
+  return bindActionCreators({
+    getUsers
+  }, dispatch)
+}
 
-export default Home;
+export default connect(mapStateToProps, mapDispatchProps)(Catalogo);

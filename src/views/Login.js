@@ -51,7 +51,7 @@ class Login extends Component {
 
     render() {
         if (this.state.isLogged) {
-            return (<Redirect to="home/" />);
+            return (<Redirect to="catalogo/" />);
         }
         return (
             <div className="Login">
@@ -92,11 +92,14 @@ class Login extends Component {
 
                 </div>
 
-                <br/>
+                <br />
 
                 <div className="login-box2">
                     <div className="card">
                         <span className="card-title">Iniciar sesion con:</span>
+                        <div className="card-content">
+                            <a>No publicaremos nada en tu Facebook o Google</a>
+                        </div>
                     </div>
                 </div>
 
