@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Redirect} from 'react-router-dom'
-import { getUsers } from '../actions'
+import { getList, del } from '../actions/habitacion'
 
 
 import './index.css'
@@ -21,7 +21,7 @@ class Catalogo extends Component {
     this.onlogout = this.onlogout.bind(this);
   }
   componentWillMount() {
-    this.props.getUsers();
+    
 
     let fbData = JSON.parse(localStorage.getItem('fbData'));
     let googleData = JSON.parse(localStorage.getItem('googleData'));
@@ -73,15 +73,6 @@ class Catalogo extends Component {
     );
   }
 }
-function mapStateToProps(state){
-  return {
-    users: state.getUsers
-  }
-}
-function mapDispatchProps(dispatch){
-  return bindActionCreators({
-    getUsers
-  }, dispatch)
-}
 
-export default connect(mapStateToProps, mapDispatchProps)(Catalogo);
+
+export default (Catalogo);

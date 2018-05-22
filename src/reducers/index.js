@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux';
-import { getUsers } from './UserReducer'
+import hotel from './hotel-reducer'
 
-export default combineReducers ({ 
-    getUsers 
-});
+let reducer = combineReducers({
+    hotel:hotel,
+    
+    
+})
+
+export default reducer 
