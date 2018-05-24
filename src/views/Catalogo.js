@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import { Redirect } from 'react-router-dom'
 import { getList, del } from '../actions/habitacion'
 import FacebookProvider, { Comments } from 'react-facebook'
-
+import YouTube from 'react-youtube';
 
 import './index.css'
 class Catalogo extends Component {
@@ -43,6 +43,14 @@ class Catalogo extends Component {
 
   }
   render() {
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+      }
+    }
+
     console.log(this.props);
     if (this.state.islogout) {
       return (<Redirect to="/" />);
@@ -93,7 +101,11 @@ class Catalogo extends Component {
                   <Comments href="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0&appId=167296827258593&autoLogAppEvents=1" />
                 </FacebookProvider>
               </div>
-              <div id="test5">Test 2</div>
+              <div id="test5"><YouTube
+        videoId="FmDfg-cfvzo"
+        opts={opts}
+        onReady={this._onReady}
+      /></div>
               <div id="test6">Test 3</div>
             </div>
           </div>
@@ -101,7 +113,7 @@ class Catalogo extends Component {
         </div>
         <div className=" card-content">
 
-
+    
 
         </div>
 
