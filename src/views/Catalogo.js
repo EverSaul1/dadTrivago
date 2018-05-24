@@ -78,7 +78,7 @@ class Catalogo extends Component {
 
           </div>
         </nav>
-
+<div className="card">
         <div className=" card horizontal">
           <div className="card-image">
             <img src="https://lorempixel.com/100/190/nature/6" />
@@ -115,6 +115,7 @@ class Catalogo extends Component {
 
     
 
+        </div>
         </div>
 
       </div>

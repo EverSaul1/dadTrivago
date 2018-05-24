@@ -95,15 +95,17 @@ class Login extends Component {
                 <br />
 
                 <div className="login-box2">
-                    <div className="card">
-                        <span className="card-title">Inicia sesión con tu e-mail:</span>
+                    <div className="L card">
+                        <span className="card-title">Inicia sesión</span>
                         <div className="card-content">
-                            <a>No publicaremos nada en tu Facebook o Google</a>
+                        Usuario:<input type="text" placeholder="ingresar tu usuario"/>
+                        Contraseña:<input type="password" placeholder=" ingresar tu contraseña"/>
+                            <button className="waves-effect waves-light btn">Iniciar</button>
                         </div>
                     </div>
                 </div>
 
-
+            
             </div>
         )
 

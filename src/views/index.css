@@ -17,7 +17,13 @@ html, body {
 .Login-box {
     display: flex;
     flex-direction: column;
-    padding-left: 200px;
+    padding-left: 400px;
+    
+}
+.L {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200x;
     
 }
 #google{
