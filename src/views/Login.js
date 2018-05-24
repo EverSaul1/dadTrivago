@@ -96,7 +96,7 @@ class Login extends Component {
 
                 <div className="login-box2">
                     <div className="card">
-                        <span className="card-title">Iniciar sesion con:</span>
+                        <span className="card-title">Inicia sesión con tu e-mail:</span>
                         <div className="card-content">
                             <a>No publicaremos nada en tu Facebook o Google</a>
                         </div>
