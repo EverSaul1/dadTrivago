@@ -78,6 +78,14 @@ class Catalogo extends Component {
 
           </div>
         </nav>
+        <div>
+            <div className="field" id="searchform">
+  <input type="text" id="searchterm" placeholder="buscar" />
+   <button className="btn waves-effect waves-light  grey darken-3" type="submit" name="action">Buscar
+    <i className="material-icons right">find_replace</i>
+  </button>
+</div>
+        </div>
 <div className="card">
         <div className=" card horizontal">
           <div className="card-image">
@@ -102,7 +110,7 @@ class Catalogo extends Component {
                 </FacebookProvider>
               </div>
               <div id="test5"><YouTube
-        videoId="FmDfg-cfvzo"
+        videoId="djV11Xbc914"
         opts={opts}
         onReady={this._onReady}
       /></div>
