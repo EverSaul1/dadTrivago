@@ -98,14 +98,18 @@ class Login extends Component {
                     <div className="L card">
                         <span className="card-title">Inicia sesión</span>
                         <div className="card-content">
-                        Usuario:<input type="text" placeholder="ingresar tu usuario"/>
-                        Contraseña:<input type="password" placeholder=" ingresar tu contraseña"/>
-                            <button className="waves-effect waves-light btn">Iniciar</button>
+
+
+                            Usuario:<input type="text" placeholder=" ingresar tu usuario" />
+                            Contraseña:<input type="password" placeholder=" ingresar tu contraseña" />
+                            <button class="btn waves-effect waves-light blue lighten-1" type="submit" name="action">Iniciar
+                                <i class="material-icons right">send</i>
+                            </button> 
                         </div>
                     </div>
                 </div>
 
-            
+
             </div>
         )
 

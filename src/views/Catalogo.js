@@ -67,7 +67,7 @@ class Catalogo extends Component {
             <a className="center brand-logo">Trivago 2.0</a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li><a><img className="circle home-avatar" src={this.state.profileImage} /></a></li>
-              <li><a>{this.state.fullName}</a></li>
+              <li><a className="name">{this.state.fullName}</a></li>
               <li><a>
                 <i onClick={this.onlogout} className="fa fa-power-off">salir</i>
               </a>

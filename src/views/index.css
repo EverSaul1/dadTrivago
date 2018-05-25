@@ -66,6 +66,9 @@ html, body {
     border-color: #757575;
     
 }
+.name{
+    padding: 16px;
+}
 .home-avatar{
     height: 50px;
 }
