@@ -79,7 +79,7 @@ html, body {
 
 
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
 
 * {
     margin:0;
@@ -87,16 +87,13 @@ html, body {
     font:12pt Arial;
 }
 
-body {
-  background-color:#34495e;
-  
-}
+
 
 .field {
   display:flex;
-  position:realtive;
+  position:relative;
   margin:5em auto;
-  width:40%;
+  width:95%;
   flex-direction:row;
   
 }
@@ -120,4 +117,28 @@ body {
   color:white;
   border:none;
 }
-
+.crds{
+    position: absolute;
+    top: 1px;
+    left: 350px;
+    font-size: 18px;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    height: 180px; 
+    
+    
+    
+}
+.buscar{
+    width: 40%;
+    
+    position: absolute;
+    top: 8px;
+    left: 350px;
+    font-size: 18px;
+}
+.imgs{
+    
+    
+}
