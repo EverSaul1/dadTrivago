@@ -49,4 +49,4 @@ const hotelReducer = (state = initialState, action) => {
             return state;
     }
 }
-export default hotelReducer
+export default hotelReducer;

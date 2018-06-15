@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Redirect } from 'react-router-dom'
 import { getList, del } from '../actions/habitacion'
-import FacebookProvider, { Comments } from 'react-facebook'
+import FacebookProvider, { Comments, Share } from 'react-facebook'
 import YouTube from 'react-youtube';
 import { Button, Modal, ButtonToolbar, OverlayTrigger, Tooltip, Popover } from 'react-bootstrap'
 
@@ -31,7 +31,7 @@ class Catalogo extends Component {
   handleClose() {
     this.setState({ show: false });
   }
-  
+
   handleShow() {
     this.setState({ show: true });
   }
@@ -134,8 +134,8 @@ class Catalogo extends Component {
               <ButtonToolbar>
                 <Button bsStyle="primary" onClick={this.handleShows}>
                   Comentar
-        </Button>
-        
+                 </Button>
+
 
                 <Modal
                   {...this.props}
@@ -143,36 +143,36 @@ class Catalogo extends Component {
                   onHide={this.handleHide}
                   dialogClassName="custom-modal"
                 >
-                
+
                   <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-lg">
                       COMENTAR
-                    
-            <FacebookProvider appId="167296827258593">
-                <Comments href="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0&appId=167296827258593&autoLogAppEvents=1" />
-              </FacebookProvider>
-            </Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body>
-                    <h4></h4>
-                    <p>
-                    
 
-                    </p>
-                  </Modal.Body>
+                        <FacebookProvider appId="167296827258593">
+                        <Comments href="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0&appId=167296827258593&autoLogAppEvents=1" />
+                      </FacebookProvider>
+                    </Modal.Title>
+                  </Modal.Header>
+                  
                   <Modal.Footer>
                     <Button bsStyle="danger" onClick={this.handleHide}>Salir</Button>
                   </Modal.Footer>
                 </Modal>
               </ButtonToolbar>
-              
+
 
 
             </div>
             
+      <FacebookProvider appId="167296827258593">
+        <Share href="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0&appId=167296827258593&autoLogAppEvents=1">
+          <button type="button">Share</button>
+        </Share>
+      </FacebookProvider>
 
-        
-            
+
+
+
 
 
           </div>
@@ -188,14 +188,14 @@ class Catalogo extends Component {
           </div>
           <div className="card-content grey lighten-4">
             <div id="test4">
-              
+
             </div>
             <div id="test5">
-            <YouTube
-              videoId="djV11Xbc914"
-              opts={opts}
-              onReady={this._onReady}
-            />
+              <YouTube
+                videoId="djV11Xbc914"
+                opts={opts}
+                onReady={this._onReady}
+              />
             </div>
             <div id="test6">Test 3</div>
           </div>
