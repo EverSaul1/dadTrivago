@@ -118,27 +118,48 @@ html, body {
   border:none;
 }
 .crds{
-    position: absolute;
-    top: 1px;
-    left: 350px;
-    font-size: 18px;
-    width: 70%;
-    margin: 0;
-    padding: 0;
-    height: 180px; 
     
     
     
 }
-.buscar{
-    width: 40%;
-    
-    position: absolute;
-    top: 8px;
-    left: 350px;
-    font-size: 18px;
-}
+
 .imgs{
     
     
 }
+.titleBar {
+    background-color: #000;
+    display: block;
+    color: #fff;
+    padding-left: 16px
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  
+  .App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .App-title {
+    font-size: 1.5em;
+  }
+  
+  .App-intro {
+    font-size: large;
+  }
+  
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
